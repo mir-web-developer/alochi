@@ -35,7 +35,7 @@ export const LangCard = ({ id, heading, text, img, link }) => {
         <NavLink className="langCard__classLink" to={link}>
           <CardActionArea>
             <Card className={classes.card}>
-              <CardMedia
+              <CardMedia 
                 className={classes.cardMedia}
                 image={img}
                 title="Image title"

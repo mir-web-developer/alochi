@@ -107,7 +107,8 @@ const dispatch = useDispatch()
         })
       );
       if(user){
-        history.push("/");
+        
+        history.push("/")
         toast.success("Successfully logged in");
       }
     });

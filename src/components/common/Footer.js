@@ -1,4 +1,4 @@
-import { Link, makeStyles, Typography } from "@material-ui/core";
+import { Divider, Link, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 
 function Copyright() {
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
-    marginTop: theme.spacing(3)
+    // marginTop: theme.spacing(3)
   }
 }));
 
@@ -26,7 +26,9 @@ export const Footer = () => {
   const classes = useStyles();
   return (
     <>
+    <Divider  />
       <footer className={classes.footer}>
+      
         <Typography variant="h6" align="center" gutterBottom>
           Alochi
         </Typography>

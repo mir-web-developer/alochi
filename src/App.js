@@ -1,5 +1,4 @@
 import React, { useEffect} from "react";
-import "./styles.css";
 import { auth} from "./firebase";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
@@ -15,6 +14,7 @@ import { Physics } from "./components/classes/Physics";
 import { useDispatch } from "react-redux";
 import { logIn, logOut } from "./reducers/userReducer";
 import RestClasses from "./components/classes/RestClasses";
+import BriefA1_1 from "./components/German/BriefA1_1";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -36,6 +36,9 @@ export default function App() {
     });
   }, []);
 
+
+
+  
   return (
     <div className="app">
       <Switch>
@@ -48,7 +51,10 @@ export default function App() {
         <Route path="/class4" component={IT} />
         <Route path="/class5" component={Physics} />
         <Route path="/class6" component={RestClasses} />
+    {/* //////////////////// German Class ///////////////////////// */}
+        <Route path="/briefA1_1" component={() => <BriefA1_1  />} />
       </Switch>
+      
       <ToastContainer position="bottom-center" />
     </div>
   );

@@ -4,6 +4,11 @@ import { LangCard } from "./LangCard";
 import Container from "@material-ui/core/Container";
 import { useSelector } from "react-redux";
 import { makeStyles } from "@material-ui/core";
+import math from "../../backgroundPics/math.svg"
+import german from "../../backgroundPics/german.svg"
+import english from "../../backgroundPics/english.svg"
+import IT from "../../backgroundPics/IT.svg"
+import physics from "../../backgroundPics/physics.svg"
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -30,7 +35,7 @@ export const CardGrid = () => {
                 heading={cards[0].heading}
                 text={cards[0].text}
                 link="class1"
-                img={"https://source.unsplash.com/random"}
+                img={german}
               />
               <LangCard
                 classes={classes}
@@ -38,7 +43,7 @@ export const CardGrid = () => {
                 heading={cards[1].heading}
                 text={cards[1].text}
                 link="class2"
-                img={"https://source.unsplash.com/random"}
+                img={english}
               />
               <LangCard
                 classes={classes}
@@ -46,7 +51,7 @@ export const CardGrid = () => {
                 heading={cards[2].heading}
                 text={cards[2].text}
                 link="class3"
-                img={"https://source.unsplash.com/random"}
+                img={math}
               />
               <LangCard
                 classes={classes}
@@ -54,7 +59,7 @@ export const CardGrid = () => {
                 heading={cards[3].heading}
                 text={cards[3].text}
                 link="class4"
-                img={"https://source.unsplash.com/random"}
+                img={IT}
               />
               <LangCard
                 classes={classes}
@@ -62,7 +67,7 @@ export const CardGrid = () => {
                 heading={cards[4].heading}
                 text={cards[4].text}
                 link="class5"
-                img={"https://source.unsplash.com/random"}
+                img={physics}
               />
               <LangCard
                 classes={classes}

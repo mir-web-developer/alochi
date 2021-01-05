@@ -1,8 +1,8 @@
-import firebase from "firebase/app"
-import 'firebase/auth';
-import 'firebase/database';
+import firebase from "firebase";
+import "firebase/auth";
+import "firebase/database";
 
-import 'firebase/firestore';
+import "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBOPoWWPJVIUinJj-ZyNaPIVi46dlHjP_A",
@@ -12,14 +12,14 @@ const firebaseConfig = {
   storageBucket: "alochi-ccc96.appspot.com",
   messagingSenderId: "1067893864339",
   appId: "1:1067893864339:web:771cf2520bb7da83731a66",
-  measurementId: "G-50VDRYZDHW"
-}
+  measurementId: "G-50VDRYZDHW",
+};
 
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const firebaseApp= firebase.initializeApp(firebaseConfig)
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+const provider = new firebase.auth.GoogleAuthProvider();
+const storage = firebase.storage();
 
-const db = firebaseApp.firestore()
-const auth = firebase.auth()
-const provider = new firebase.auth.GoogleAuthProvider()
-
-export {db , auth, provider}
+export { db, auth, provider, storage };
