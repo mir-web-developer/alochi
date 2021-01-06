@@ -14,7 +14,7 @@ import { Physics } from "./components/classes/Physics";
 import { useDispatch } from "react-redux";
 import { logIn, logOut } from "./reducers/userReducer";
 import RestClasses from "./components/classes/RestClasses";
-import BriefA1_1 from "./components/German/BriefA1_1";
+import BriefA1 from "./components/German/BriefA1";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/class5" component={Physics} />
         <Route path="/class6" component={RestClasses} />
     {/* //////////////////// German Class ///////////////////////// */}
-        <Route path="/briefA1_1" component={() => <BriefA1_1  />} />
+        <Route path="/briefA1" component={() => <BriefA1 />} />
       </Switch>
       
       <ToastContainer position="bottom-center" />

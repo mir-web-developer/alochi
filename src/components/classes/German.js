@@ -7,7 +7,6 @@ import { Grid } from "@material-ui/core";
 import { MainAppBar } from "../common/MainAppBar";
 import { Footer } from "../common/Footer";
 import { Route } from "react-router";
-import BriefA1_1 from "../German/BriefA1_1";
 import { NavLink } from "react-router-dom";
 
 export const German = () => {
@@ -25,7 +24,7 @@ export const German = () => {
               sectionImg={"https://source.unsplash.com/random"}
             />
             {/* //////////////////////////////////////// */}
-            <NavLink className = "german__navLinkOfSection" to="/briefA1_1">
+            <NavLink className = "german__navLinkOfSection" to="/briefA1">
               <CardInClasses
                 sectionName={"Brief A1"}
                 sectionSubName={"Nemis tilida matnlar"}

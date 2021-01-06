@@ -1,23 +1,58 @@
-import { Button, Icon, makeStyles, TextField } from "@material-ui/core";
+import {
+  Button,
+    Divider,
+    Grid,
+  LinearProgress,
+  makeStyles,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { db, storage } from "../../firebase";
 import firebase from "firebase";
+import Icon from "@material-ui/core/Icon";
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import "../../styles/Comments.css"
+import ChatIcon from '@material-ui/icons/Chat';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(1),
+    marginTop:theme.spacing(10),
+      margin: "auto",
       width: "50ch",
-    },
-    button: {
-      margin: theme.spacing(1),
-    },
+      flexGrow:1,
+      marginBottom:theme.spacing(5)
+      
   },
+    sendButton: {
+        width:115,
+        marginTop:theme.spacing(-5),
+        marginLeft:"100%"
+    },
+    textArea:{
+    width:"100%",
+    },
+    progress: {
+        marginTop:theme.spacing(2),
+      width: "100%",
+    },
+    input:{
+        display:"none"
+    },
+    uploadButton:{
+marginTop:theme.spacing(3)
+    },
+    commentBoxTitle:{
+        marginBottom:theme.spacing(2),
+        
+
+    }
+  
 }));
 
-function Comments() {
-  const username =useSelector((state) => state.user.user);
+function Comments({ dbCollectionName }) {
+  const username = useSelector((state) => state.user.user);
   const classes = useStyles();
   const [image, setImage] = useState(null);
   const [progress, setProgress] = useState(0);
@@ -26,12 +61,13 @@ function Comments() {
   const handleChange = (e) => {
     if (e.currentTarget.files[0]) {
       setImage(e.currentTarget.files[0]);
-    }else{setImage(null)}
-    
+    } else {
+      setImage(null);
+    }
   };
 
   const handleUpload = () => {
-    const uploadTask = storage.ref(`images/${image.name}`).put(image);
+    const uploadTask = storage.ref(`images/${image?.name}`).put(image);
     uploadTask.on(
       "state_changed",
       (snapshot) => {
@@ -53,48 +89,95 @@ function Comments() {
           .child(image.name)
           .getDownloadURL()
           .then((url) => {
-            db.collection("comments").add({
+            db.collection(dbCollectionName).add({
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
               caption: caption,
               imageUrl: url,
               username: username.displayName,
-              userPhoto: username.photoURL
+              userPhoto: username.photoURL,
+              userUid: username.uid,
+              userEmail: username.email,
             });
-            
+
             setProgress(0);
             setCaption("");
             setImage(null);
-            
           });
       }
     );
   };
 
   return (
-    <div>
-      <progress className="imageupload__progress" value={progress} max="100" />
-      <form className={classes.root} noValidate autoComplete="off">
+      <>
+    <Divider />
+    
+    <div className={classes.root}>
+        
+    <Typography className={classes.commentBoxTitle}  variant="h5"  gutterBottom>
+       <ChatIcon/> Comments
+      </Typography>
+        <Grid container spacing={3} direction="column" >
+      <form  noValidate autoComplete="off">
+          <Grid item>
+       
+        
         <TextField
           id="outlined-textarea"
           label="Multiline Placeholder"
           placeholder="Leave comment"
+          className={classes.textArea}
           multiline
           variant="outlined"
           onChange={(event) => setCaption(event.currentTarget.value)}
           value={caption}
-        />
+          rows={4}
+        /></Grid>
       </form>
-      <input type="file" onChange={handleChange} />
+
+      <input
+        accept="image/*"
+        className="comments__input"
+        id="contained-button-file"
+        type="file"
+        onChange={handleChange}
+      />
+     
+      <label htmlFor="contained-button-file">
+          
+      <LinearProgress
+          className={classes.progress}
+          variant="determinate"
+          value={progress}
+          max="100"
+        />
+        
       <Button
+        variant="contained"
+        color="secondary"
+        className={classes.uploadButton}
+        startIcon={<CloudUploadIcon />}
+        component="span"
+        type="file"
+        size="large"
+      >Upload</Button>
+      </label>
+      {image?.name}
+      <Button
+      size="large"
         onClick={handleUpload}
         variant="contained"
         color="primary"
-        className={classes.button}
+        className={classes.sendButton}
         endIcon={<Icon>send</Icon>}
       >
         Send
       </Button>
+      
+      </Grid>
+    
     </div>
+    
+  </>
   );
 }
 

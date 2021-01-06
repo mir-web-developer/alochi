@@ -12,8 +12,6 @@ const firebaseState = {
 
 export const homeReducer = (state = firebaseState, action) => {
   switch (action.type) {
-    case "RETURN_STATE":
-      return state;
     
       default: return state
   }
