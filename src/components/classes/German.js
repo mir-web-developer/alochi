@@ -8,6 +8,22 @@ import { MainAppBar } from "../common/MainAppBar";
 import { Footer } from "../common/Footer";
 import { Route } from "react-router";
 import { NavLink } from "react-router-dom";
+import BriefA1 from "../../backgroundPics/germanMainSection/BriefA1.svg"
+import BriefA2 from "../../backgroundPics/germanMainSection/BriefA2.svg"
+import test from "../../backgroundPics/germanMainSection/test.svg"
+import TextA1 from "../../backgroundPics/germanMainSection/TextA1.svg"
+import TextA2 from "../../backgroundPics/germanMainSection/TextA2.svg"
+import TextB1 from "../../backgroundPics/germanMainSection/TextB1.svg"
+import TextB2 from "../../backgroundPics/germanMainSection/TextB2.svg"
+import lessonstunde from "../../backgroundPics/germanMainSection/lessonstunde.svg"
+import wortschatzA1_A2 from "../../backgroundPics/germanMainSection/wortschatzA1_A2.svg"
+import wortschatzA2_B1 from "../../backgroundPics/germanMainSection/wortschatzA2_B1.svg"
+import slide from "../../backgroundPics/germanMainSection/slide.svg"
+import ferienjob from "../../backgroundPics/germanMainSection/ferienjob.svg"
+import bucher from "../../backgroundPics/germanMainSection/bucher.svg"
+import stipendien from "../../backgroundPics/germanMainSection/stipendien.svg"
+
+
 
 export const German = () => {
   return (
@@ -17,82 +33,83 @@ export const German = () => {
       <Container maxWidth="md">
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={6}>
-            
+          <NavLink className = "german__navLinkOfSection" to="/german/germanTests">
             <CardInClasses
               sectionName={"Test"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={test}
             />
+            </NavLink>
             {/* //////////////////////////////////////// */}
-            <NavLink className = "german__navLinkOfSection" to="/briefA1">
+            <NavLink className = "german__navLinkOfSection" to="/german/briefA1">
               <CardInClasses
                 sectionName={"Brief A1"}
                 sectionSubName={"Nemis tilida matnlar"}
-                sectionImg={"https://source.unsplash.com/random"}
+                sectionImg={BriefA1}
               />
             </NavLink>
             {/* //////////////////////////////////////// */}
             <CardInClasses
               sectionName={"Brief A2"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={BriefA2}
             />
             <CardInClasses
               sectionName={"Stunde"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={lessonstunde}
             />
             <CardInClasses
               sectionName={"Text A1"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={TextA1}
             />
             <CardInClasses
               sectionName={"Text A2"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={TextA2}
             />
             <CardInClasses
               sectionName={"Text B1"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={TextB1}
             />
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
             <CardInClasses
               sectionName={"Text B2"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={TextB2}
             />
             <CardInClasses
               sectionName={"Wortschatz A1-A2"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={wortschatzA1_A2}
             />
             <CardInClasses
               sectionName={"Wortschatz A2-B1"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={wortschatzA2_B1}
             />
             <CardInClasses
               sectionName={"Slayd"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={slide}
             />
             <CardInClasses
               sectionName={"Ferienjob"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={ferienjob}
             />
             <CardInClasses
               sectionName={"Uber Stipendien"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={stipendien}
             />
             <CardInClasses
               sectionName={"Bucher"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={bucher}
             />
           </Grid>
         </Grid>

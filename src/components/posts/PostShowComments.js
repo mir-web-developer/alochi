@@ -18,13 +18,12 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "36ch",
     backgroundColor: theme.palette.background.paper,
     margin: "auto",
-    marginLeft:theme.spacing(46),
+    marginLeft:theme.spacing(30),
+    backgroundColor:theme.palette.background.default,
     [theme.breakpoints.down('sm')]: {
-      marginLeft:theme.spacing(0),
-      
-      
-    }
-    
+        marginLeft:"10%",
+        
+      }
     
   },
   inline: {
@@ -33,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
   media: {
     width: "100%",
     borderRadius: 10,
-    marginTop: theme.spacing(0),
+    
   },
   currentSender: {
-    marginLeft: theme.spacing(36),
+    marginLeft: theme.spacing(35),
     [theme.breakpoints.down('sm')]: {
-      marginLeft:theme.spacing(0),
-      backgroundColor:theme.palette.divider
-    }
+        marginLeft:theme.spacing(0),
+        backgroundColor:theme.palette.divider
+      }
     
   },
   caption:{
@@ -50,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function ShowComments({
+export default function PostShowComments({
   userPhoto,
   username,
   caption,

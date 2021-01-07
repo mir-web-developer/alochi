@@ -13,30 +13,30 @@ export const IT = () => {
       <MainAppBar />
       <CssBaseline />
       <Container maxWidth="md">
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={6}>
+        <Grid container justify="center" alignItems="center" spacing={3}>
+          <Grid item xs={12} sm={6} md={8}>
            
             <CardInClasses
-              sectionName={"Test"}
+              sectionName={"Олимпиада"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Brief A1"}
+            sectionName={"Тесты"}
             sectionSubName={"Nemis tilida matnlar"}
             sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Brief A2"}
+            sectionName={"Арифметика"}
             sectionSubName={"Nemis tilidan testlar"}
             sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Stunde"}
+            sectionName={"Книги"}
             sectionSubName={"Nemis tilidan testlar"}
             sectionImg={"https://source.unsplash.com/random"}
             />
-            <CardInClasses
+            {/* <CardInClasses
             sectionName={"Text A1"}
             sectionSubName={"Nemis tilidan testlar"}
             sectionImg={"https://source.unsplash.com/random"}
@@ -50,11 +50,11 @@ export const IT = () => {
              sectionName={"Text B1"}
              sectionSubName={"Nemis tilidan testlar"}
              sectionImg={"https://source.unsplash.com/random"}
-            />
+            /> */}
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
             
-            <CardInClasses 
+            {/* <CardInClasses 
              sectionName={"Text B2"}
              sectionSubName={"Nemis tilidan testlar"}
              sectionImg={"https://source.unsplash.com/random"}
@@ -88,7 +88,7 @@ export const IT = () => {
              sectionName={"Bucher"}
              sectionSubName={"Nemis tilidan testlar"}
              sectionImg={"https://source.unsplash.com/random"}
-            />
+            /> */}
           </Grid>
         </Grid>
       </Container>

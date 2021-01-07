@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cover: {
     width: "50%",
-    height:151
+    height:150
   }
 }));
 

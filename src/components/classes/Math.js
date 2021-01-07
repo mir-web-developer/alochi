@@ -13,47 +13,46 @@ export const Math = () => {
       <MainAppBar />
       <CssBaseline />
       <Container maxWidth="md">
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={6}>
-           
+        <Grid container justify="center" alignItems="center" spacing={3}>
+          <Grid item xs={12} sm={6} md={8}>
             <CardInClasses
-              sectionName={"Test"}
+              sectionName={"Олимпиада"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Brief A1"}
-            sectionSubName={"Nemis tilida matnlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+              sectionName={"Тесты"}
+              sectionSubName={"Nemis tilida matnlar"}
+              sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Brief A2"}
-            sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+              sectionName={"Геометрия"}
+              sectionSubName={"Nemis tilidan testlar"}
+              sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Stunde"}
-            sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+              sectionName={"Алгебра"}
+              sectionSubName={"Nemis tilidan testlar"}
+              sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Text A1"}
-            sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+              sectionName={"Книги"}
+              sectionSubName={"Nemis tilidan testlar"}
+              sectionImg={"https://source.unsplash.com/random"}
             />
             <CardInClasses
-            sectionName={"Text A2"}
-            sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
-              />
-              <CardInClasses
-             sectionName={"Text B1"}
-             sectionSubName={"Nemis tilidan testlar"}
-             sectionImg={"https://source.unsplash.com/random"}
+              sectionName={"Высшая математика"}
+              sectionSubName={"Nemis tilidan testlar"}
+              sectionImg={"https://source.unsplash.com/random"}
             />
+            {/* <CardInClasses
+              sectionName={"Text B1"}
+              sectionSubName={"Nemis tilidan testlar"}
+              sectionImg={"https://source.unsplash.com/random"}
+            /> */}
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
-            
+            {/*             
             <CardInClasses 
              sectionName={"Text B2"}
              sectionSubName={"Nemis tilidan testlar"}
@@ -88,7 +87,7 @@ export const Math = () => {
              sectionName={"Bucher"}
              sectionSubName={"Nemis tilidan testlar"}
              sectionImg={"https://source.unsplash.com/random"}
-            />
+            /> */}
           </Grid>
         </Grid>
       </Container>

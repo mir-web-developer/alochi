@@ -13,8 +13,12 @@ import { IT } from "./components/classes/IT";
 import { Physics } from "./components/classes/Physics";
 import { useDispatch } from "react-redux";
 import { logIn, logOut } from "./reducers/userReducer";
-import RestClasses from "./components/classes/RestClasses";
+import {RestClasses} from "./components/classes/RestClasses";
 import BriefA1 from "./components/German/BriefA1";
+import GermanTests from "./components/German/GermanTests";
+import Posts from "./components/posts/Posts";
+import Post from "./components/posts/Post";
+import AddPost from "./components/posts/AddPost";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -51,8 +55,12 @@ export default function App() {
         <Route path="/class4" component={IT} />
         <Route path="/class5" component={Physics} />
         <Route path="/class6" component={RestClasses} />
+        <Route path="/posts" component={()=> <Posts />} />
+        <Route path="/post" component={()=> <Post />} />
+        <Route path="/addPost" component={()=> <AddPost />} />
     {/* //////////////////// German Class ///////////////////////// */}
-        <Route path="/briefA1" component={() => <BriefA1 />} />
+        <Route path="/german/briefA1" component={() => <BriefA1 />} />
+        <Route path="/german/germanTests" component={() => <GermanTests />} />
       </Switch>
       
       <ToastContainer position="bottom-center" />

@@ -162,6 +162,7 @@ export default function BriefA1() {
     <>
       <MainAppBar />
       <div className={classes.root}>
+      
         <Tabs
           orientation="vertical"
           variant="scrollable"
@@ -214,10 +215,15 @@ export default function BriefA1() {
             {brief1.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -232,10 +238,15 @@ export default function BriefA1() {
             {brief2.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -250,10 +261,15 @@ export default function BriefA1() {
             {brief3.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -268,10 +284,15 @@ export default function BriefA1() {
             {brief4.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -286,10 +307,15 @@ export default function BriefA1() {
             {brief5.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -304,10 +330,15 @@ export default function BriefA1() {
             {brief6.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -322,10 +353,15 @@ export default function BriefA1() {
             {brief7.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -340,10 +376,15 @@ export default function BriefA1() {
             {brief8.map(({ comment, id }) => {
               return (
                 <div>
-                  <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} />
+                  <ShowComments
+                    userPhoto={comment.userPhoto}
+                    username={comment.username}
+                    caption={comment.caption}
+                    imageUrl={comment.imageUrl}
+                    userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
+                  />
                 </div>
               );
             })}
@@ -364,11 +405,9 @@ export default function BriefA1() {
                     caption={comment.caption}
                     imageUrl={comment.imageUrl}
                     userUid={comment.userUid}
+                    userEmail={comment.userEmail}
+                    createdTime={new Date(comment.timestamp?.seconds * 1000).toUTCString()}
                   />
-                  {/* <img src={comment.userPhoto} />
-                  {comment.username}
-                  {comment.caption}
-                  <img src={comment.imageUrl} /> */}
                 </div>
               );
             })}
