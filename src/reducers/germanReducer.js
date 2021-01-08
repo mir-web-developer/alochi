@@ -51,6 +51,28 @@ const initialState = {
       dbCollectionName: "briefA1-10",
     },
   ],
+  stunde: [
+    {
+      key: "1",
+      title: "Title 1",
+      content: "I am the content of the accordion",
+    },
+    {
+      key: "2",
+      title: "Title 2",
+      content: "I am the content of the accordion",
+    },
+    {
+      key: "3",
+      title: "Title 3",
+      content: "I am the content of the accordion",
+    },
+    {
+      key: "4",
+      title: "Title 4",
+      content: "I am the content of the accordion",
+    },
+  ],
 };
 
 export const germanReducer = (state = initialState, action) => {

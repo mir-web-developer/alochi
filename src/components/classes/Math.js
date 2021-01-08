@@ -2,10 +2,16 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import CardInClasses from "../common/CardInClasses";
-
 import { Grid } from "@material-ui/core";
 import { MainAppBar } from "../common/MainAppBar";
 import { Footer } from "../common/Footer";
+import algebra from "../../backgroundPics/mathMainSection/algebra.svg"
+import geometry from "../../backgroundPics/mathMainSection/geometry.svg"
+import mathetest from "../../backgroundPics/mathMainSection/mathetest.svg"
+import olimpmathe from "../../backgroundPics/mathMainSection/olimpmathe.svg"
+import oliyMathe from "../../backgroundPics/mathMainSection/oliyMathe.svg"
+import books from "../../backgroundPics/mathMainSection/books.svg"
+
 
 export const Math = () => {
   return (
@@ -18,32 +24,32 @@ export const Math = () => {
             <CardInClasses
               sectionName={"Олимпиада"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={olimpmathe}
             />
             <CardInClasses
               sectionName={"Тесты"}
               sectionSubName={"Nemis tilida matnlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={mathetest}
             />
             <CardInClasses
               sectionName={"Геометрия"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={geometry}
             />
             <CardInClasses
               sectionName={"Алгебра"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={algebra}
             />
             <CardInClasses
               sectionName={"Книги"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={books}
             />
             <CardInClasses
               sectionName={"Высшая математика"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={oliyMathe}
             />
             {/* <CardInClasses
               sectionName={"Text B1"}

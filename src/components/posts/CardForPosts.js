@@ -97,7 +97,7 @@ function CardForPosts({
               <Typography align="center" component="h5" variant="h5">
                 {postTitle}
               </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
+              <Typography  variant="subtitle1" color="textSecondary">
                 {postContent}
               </Typography>
             </CardContent>

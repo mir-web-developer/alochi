@@ -2,15 +2,16 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Container, Grid, makeStyles } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6)
+    padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
-    marginTop: theme.spacing(4)
-  }
+    marginTop: theme.spacing(4),
+  },
 }));
 
 export const HeroUnit = () => {
@@ -41,9 +42,12 @@ export const HeroUnit = () => {
           <div className={classes.heroButtons}>
             <Grid container spacing={2} justify="center">
               <Grid item>
-                <Button variant="contained" color="primary">
-                  Main call to action
-                </Button>
+                <NavLink className="home_appButton_signin" to="/posts">
+                  
+                  <Button variant="contained" color="primary">
+                    Posts
+                  </Button>
+                </NavLink>
               </Grid>
               <Grid item>
                 <Button variant="outlined" color="primary">

@@ -6,6 +6,11 @@ import CardInClasses from "../common/CardInClasses";
 import { Grid } from "@material-ui/core";
 import { MainAppBar } from "../common/MainAppBar";
 import { Footer } from "../common/Footer";
+import aboutsity from "../../backgroundPics/ITMainSection/aboutsity.svg"
+import Arifmetika from "../../backgroundPics/ITMainSection/Arifmetika.svg"
+import books from "../../backgroundPics/ITMainSection/books.svg"
+import olimp from "../../backgroundPics/ITMainSection/olimp.svg"
+import test from "../../backgroundPics/ITMainSection/test.svg"
 
 export const IT = () => {
   return (
@@ -19,22 +24,22 @@ export const IT = () => {
             <CardInClasses
               sectionName={"Олимпиада"}
               sectionSubName={"Nemis tilidan testlar"}
-              sectionImg={"https://source.unsplash.com/random"}
+              sectionImg={olimp}
             />
             <CardInClasses
             sectionName={"Тесты"}
             sectionSubName={"Nemis tilida matnlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+            sectionImg={test}
             />
             <CardInClasses
             sectionName={"Арифметика"}
             sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+            sectionImg={Arifmetika}
             />
             <CardInClasses
             sectionName={"Книги"}
             sectionSubName={"Nemis tilidan testlar"}
-            sectionImg={"https://source.unsplash.com/random"}
+            sectionImg={books}
             />
             {/* <CardInClasses
             sectionName={"Text A1"}

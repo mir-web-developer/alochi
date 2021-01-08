@@ -1,5 +1,5 @@
-import React, { useEffect} from "react";
-import { auth} from "./firebase";
+import React, { useEffect } from "react";
+import { auth } from "./firebase";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
@@ -13,18 +13,20 @@ import { IT } from "./components/classes/IT";
 import { Physics } from "./components/classes/Physics";
 import { useDispatch } from "react-redux";
 import { logIn, logOut } from "./reducers/userReducer";
-import {RestClasses} from "./components/classes/RestClasses";
+import { RestClasses } from "./components/classes/RestClasses";
 import BriefA1 from "./components/German/BriefA1";
 import GermanTests from "./components/German/GermanTests";
 import Posts from "./components/posts/Posts";
 import Post from "./components/posts/Post";
 import AddPost from "./components/posts/AddPost";
+import GermanStunde from "./components/German/GermanStunde";
+import GermanTextA1 from "./components/German/GermanTextA1";
 
 export default function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-     auth.onAuthStateChanged((authUser) => {
+    auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         dispatch(
           logIn({
@@ -40,9 +42,6 @@ export default function App() {
     });
   }, []);
 
-
-
-  
   return (
     <div className="app">
       <Switch>
@@ -55,14 +54,16 @@ export default function App() {
         <Route path="/class4" component={IT} />
         <Route path="/class5" component={Physics} />
         <Route path="/class6" component={RestClasses} />
-        <Route path="/posts" component={()=> <Posts />} />
-        <Route path="/post" component={()=> <Post />} />
-        <Route path="/addPost" component={()=> <AddPost />} />
-    {/* //////////////////// German Class ///////////////////////// */}
+        <Route path="/posts" component={() => <Posts />} />
+        <Route path="/post" component={() => <Post />} />
+        <Route path="/addPost" component={() => <AddPost />} />
+        {/* //////////////////// German Class ///////////////////////// */}
         <Route path="/german/briefA1" component={() => <BriefA1 />} />
         <Route path="/german/germanTests" component={() => <GermanTests />} />
+        <Route path="/german/stunde" component={() => <GermanStunde />} />
+        <Route path="/german/textA1" component={() => <GermanTextA1 />} />
       </Switch>
-      
+
       <ToastContainer position="bottom-center" />
     </div>
   );
