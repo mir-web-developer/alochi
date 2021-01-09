@@ -116,7 +116,7 @@ export default function BriefA1() {
       });
     db.collection(german[4].dbCollectionName)
       .orderBy("timestamp", "desc")
-      .onSnapshot((snapshot) => {
+      .onSnapshot((snapshot) => {                         
         setBrief4(
           snapshot.docs.map((doc) => ({ comment: doc.data(), id: doc.id }))
         );
@@ -187,7 +187,14 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[0].briefTitle}
             </Typography>
-            {german[0].briefText}
+            {german[0].briefName} <br/><br/>
+            {german[0].briefText}<br/><br/>
+            {german[0].briefEndName}
+
+
+
+
+
             <Comments dbCollectionName={german[0].dbCollectionName} />
             {brief0.map(({ comment, id }) => {
               return (
@@ -210,7 +217,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[1].briefTitle}
             </Typography>
-            {german[1].briefText}
+            {german[1].briefName} <br/><br/>
+            {german[1].briefText}<br/><br/>
+            {german[1].briefEndName}
             <Comments dbCollectionName={german[1].dbCollectionName} />
             {brief1.map(({ comment, id }) => {
               return (
@@ -233,7 +242,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[2].briefTitle}
             </Typography>
-            {german[2].briefText}
+            {german[2].briefName} <br/><br/>
+            {german[2].briefText}<br/><br/>
+            {german[2].briefEndName}
             <Comments dbCollectionName={german[2].dbCollectionName} />
             {brief2.map(({ comment, id }) => {
               return (
@@ -256,7 +267,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[3].briefTitle}
             </Typography>
-            {german[3].briefText}
+            {german[3].briefName} <br/><br/>
+            {german[3].briefText}<br/><br/>
+            {german[3].briefEndName}
             <Comments dbCollectionName={german[3].dbCollectionName} />
             {brief3.map(({ comment, id }) => {
               return (
@@ -279,7 +292,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[4].briefTitle}
             </Typography>
-            {german[4].briefText}
+            {german[4].briefName} <br/><br/>
+            {german[4].briefText}<br/><br/>
+            {german[4].briefEndName}
             <Comments dbCollectionName={german[4].dbCollectionName} />
             {brief4.map(({ comment, id }) => {
               return (
@@ -302,7 +317,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[5].briefTitle}
             </Typography>
-            {german[5].briefText}
+            {german[5].briefName} <br/><br/>
+            {german[5].briefText}<br/><br/>
+            {german[5].briefEndName}
             <Comments dbCollectionName={german[5].dbCollectionName} />
             {brief5.map(({ comment, id }) => {
               return (
@@ -325,7 +342,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[6].briefTitle}
             </Typography>
-            {german[6].briefText}
+            {german[6].briefName} <br/><br/>
+            {german[6].briefText}<br/><br/>
+            {german[6].briefEndName}
             <Comments dbCollectionName={german[6].dbCollectionName} />
             {brief6.map(({ comment, id }) => {
               return (
@@ -348,7 +367,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[7].briefTitle}
             </Typography>
-            {german[7].briefText}
+            {german[7].briefName} <br/><br/>
+            {german[7].briefText}<br/><br/>
+            {german[7].briefEndName}
             <Comments dbCollectionName={german[7].dbCollectionName} />
             {brief7.map(({ comment, id }) => {
               return (
@@ -371,7 +392,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[8].briefTitle}
             </Typography>
-            {german[8].briefText}
+            {german[8].briefName} <br/><br/>
+            {german[8].briefText}<br/><br/>
+            {german[8].briefEndName}
             <Comments dbCollectionName={german[8].dbCollectionName} />
             {brief8.map(({ comment, id }) => {
               return (
@@ -394,7 +417,9 @@ export default function BriefA1() {
             <Typography align="center" variant="h4" gutterBottom>
               {german[9].briefTitle}
             </Typography>
-            {german[9].briefText}
+            {german[9].briefName} <br/><br/>
+            {german[9].briefText}<br/><br/>
+            {german[9].briefEndName}
             <Comments dbCollectionName={german[9].dbCollectionName} />
             {brief9.map(({ comment, id }) => {
               return (
