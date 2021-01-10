@@ -771,7 +771,6 @@ const initialState = {
         },
       ],
     },
-
     {
       questionId: 3,
       questionName: "III Viertel V KLASS II VARIANT",
@@ -945,6 +944,389 @@ const initialState = {
             { answerText: "eine / Die", isCorrect: false },
             { answerText: "ein / Der", isCorrect: false },
             { answerText: "eines / Den", isCorrect: false },
+          ],
+        },
+      ],
+    },
+
+    {
+      questionId: 4,
+      questionName: "IV Viertel V KLASS I VARIANT",
+      questions: [
+        {
+          questionText: "…ist kalt, …schneit, ….ist spat, …ist Frühling.",
+          answerOptions: [
+            { answerText: "Das", isCorrect: false },
+            { answerText: "Das ist", isCorrect: false },
+            { answerText: "Man", isCorrect: false },
+            { answerText: "Es", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Ich … Brot und Milch",
+          answerOptions: [
+            { answerText: "kaufst", isCorrect: false },
+            { answerText: "kaufen", isCorrect: false },
+            { answerText: "kaufe", isCorrect: true },
+            { answerText: "kauft", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Sumalak ist unser …..",
+          answerOptions: [
+            { answerText: "Heimat", isCorrect: false },
+            { answerText: "National", isCorrect: false },
+            { answerText: "Nationalgericht", isCorrect: true },
+            { answerText: "Plow", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Überzetsen Sie. Bizning bog’ katta. / Наш сайт большой.",
+          answerOptions: [
+            { answerText: "Unser Garten ist klein.", isCorrect: false },
+            { answerText: "Unser Garten ist klug.", isCorrect: false },
+            { answerText: "Unser Garten ist groß.", isCorrect: true },
+            { answerText: "Unser Garten ist schon.", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Bu Ra’no.U tirishqoq. / Это Раъно. Она усердно",
+          answerOptions: [
+            { answerText: "Das ist Ra´no. Sie ist fleißig.", isCorrect: true },
+            { answerText: "Das ist Ra´no.", isCorrect: false },
+            { answerText: "Sie ist fleißig.", isCorrect: false },
+            { answerText: "Das ist Ra´no. Er ist fleißig.", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Bizning maktab chiroyli va katta. / Наша школа красивая и большая.",
+          answerOptions: [
+            { answerText: "Unsere Schule ist klein.", isCorrect: false },
+            { answerText: "Unsere Schule ist groß.", isCorrect: false },
+            { answerText: "Unsere Schule ist schon und groß.", isCorrect: true },
+            { answerText: "Unsere Schule ist interessant.", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Mening otam o’qituvchi / Мой папа учитель",
+          answerOptions: [
+            { answerText: "Meine Mutter ist Lehrenin.", isCorrect: false },
+            { answerText: "Mein Vater ist Lehrer.", isCorrect: true },
+            { answerText: "Unsere Schule ist schon und groß.", isCorrect: false },
+            { answerText: "Unsere Schule ist interessant.", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Mening ismim Monika. / Меня зовут Моника.",
+          answerOptions: [
+            { answerText: "Ich heisse Monika.", isCorrect: true },
+            { answerText: "Ich heißt Malika.", isCorrect: false },
+            { answerText: "Ich heißen Ma´mura.", isCorrect: false },
+            { answerText: "Ich heiß Munisa.", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Was past nicht.",
+          answerOptions: [
+            { answerText: "der Wolf", isCorrect: false },
+            { answerText: "der Fuchs", isCorrect: false },
+            { answerText: "der Bär", isCorrect: false },
+            { answerText: "der Apfel", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Das Navrusfest … Im Frühling.",
+          answerOptions: [
+            { answerText: "kocht man.", isCorrect: false },
+            { answerText: "spielt man", isCorrect: false },
+            { answerText: "ißt man", isCorrect: false },
+            { answerText: "feiert man", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Was mach … du?",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Er spiel … Fuβball.",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-t", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich les… gern.",
+          answerOptions: [
+            { answerText: "-e", isCorrect: true },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Er lies…. Am leibsten Machen.",
+          answerOptions: [
+            { answerText: "-t", isCorrect: true },
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Was lies … du lieber?",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-t", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-es", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wir  sammel… Briefmarken.",
+          answerOptions: [
+            { answerText: "-n", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Suchra hör… Musik gern.",
+          answerOptions: [
+            { answerText: "-t", isCorrect: true },
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich hör… Musik gern.",
+          answerOptions: [
+            { answerText: "-e", isCorrect: true },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich fahr… Rad",
+          answerOptions: [
+            { answerText: "-e", isCorrect: true },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich wohn… in Taschkent",
+          answerOptions: [
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-e", isCorrect: true },
+            { answerText: "-st", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Er heis…. Karim",
+          answerOptions: [
+            { answerText: "-st", isCorrect: true },
+            { answerText: "-t", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-e", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich … 10 jahre alt",
+          answerOptions: [
+            { answerText: "ist", isCorrect: false },
+            { answerText: "habe", isCorrect: false },
+            { answerText: "bin", isCorrect: true },
+            { answerText: "hat", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie alt … du?",
+          answerOptions: [
+            { answerText: "bist", isCorrect: true },
+            { answerText: "hast", isCorrect: false },
+            { answerText: "bin", isCorrect: false },
+            { answerText: "habt", isCorrect: false },
+          ],
+        },
+      ],
+    },
+
+    {
+      questionId: 5,
+      questionName: "IV Viertel V KLASS II VARIANT",
+      questions: [
+        {
+          questionText: "Ich … eine Schwester.",
+          answerOptions: [
+            { answerText: "habe", isCorrect: true },
+            { answerText: "habt", isCorrect: false },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hast", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Er … ein Zimmer",
+          answerOptions: [
+            { answerText: "habe", isCorrect: false },
+            { answerText: "habt", isCorrect: false },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hat", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Ich wohne in Uzbekistan. … Familie ist groß.",
+          answerOptions: [
+            { answerText: "dein", isCorrect: false },
+            { answerText: "deine", isCorrect: false },
+            { answerText: "mein", isCorrect: false },
+            { answerText: "meine", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Hast du einen Hund? Ist ….Hund Klein?",
+          answerOptions: [
+            { answerText: "mein", isCorrect: false },
+            { answerText: "dein", isCorrect: true },
+            { answerText: "meine", isCorrect: false },
+            { answerText: "meiner", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Was … du in der Tasche?",
+          answerOptions: [
+            { answerText: "habe", isCorrect: false },
+            { answerText: "hast", isCorrect: true },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hat", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich … einer Radiergummi.",
+          answerOptions: [
+            { answerText: "habe", isCorrect: true },
+            { answerText: "habt", isCorrect: false },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hat", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Mirjakhon … einen Spitzer",
+          answerOptions: [
+            { answerText: "habe", isCorrect: false },
+            { answerText: "habt", isCorrect: false },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hat", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Dilbar … ein Heft.",
+          answerOptions: [
+            { answerText: "habe", isCorrect: false },
+            { answerText: "hat", isCorrect: true },
+            { answerText: "haben", isCorrect: false },
+            { answerText: "hast", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ich les... gern.",
+          answerOptions: [
+            { answerText: "-e", isCorrect: true },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Was mach… du?",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Er spiel… fußball.",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Wir komm… ins Kino mit?",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: false },
+            { answerText: "-en", isCorrect: true },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Komm… du mir?",
+          answerOptions: [
+            { answerText: "-e", isCorrect: false },
+            { answerText: "-st", isCorrect: true },
+            { answerText: "-en", isCorrect: false },
+            { answerText: "-t", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Das Zimmer … hell.",
+          answerOptions: [
+            { answerText: "sein", isCorrect: false },
+            { answerText: "ist", isCorrect: true },
+            { answerText: "bist", isCorrect: false },
+            { answerText: "sind", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Mein Opa … sehr alt.",
+          answerOptions: [
+            { answerText: "sein", isCorrect: false },
+            { answerText: "ist", isCorrect: true },
+            { answerText: "bist", isCorrect: false },
+            { answerText: "sind", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wir … auch 10 jahre  alt.",
+          answerOptions: [
+            { answerText: "sein", isCorrect: false },
+            { answerText: "ist", isCorrect: false },
+            { answerText: "bist", isCorrect: false },
+            { answerText: "sind", isCorrect: true },
+          ],
+        },
+        {
+          questionText: "Das … ein Pferd.",
+          answerOptions: [
+            { answerText: "sein", isCorrect: false },
+            { answerText: "ist", isCorrect: true },
+            { answerText: "bist", isCorrect: false },
+            { answerText: "sind", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Mein Vater … Lehrer.",
+          answerOptions: [
+            { answerText: "sein", isCorrect: false },
+            { answerText: "ist", isCorrect: true },
+            { answerText: "bist", isCorrect: false },
+            { answerText: "sind", isCorrect: false },
           ],
         },
       ],
