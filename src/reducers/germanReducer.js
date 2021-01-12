@@ -127,7 +127,7 @@ const initialState = {
       content: "I am the content of the accordion",
     },
   ],
-  question: [
+  question5class: [
     {
       questionId: 0,
       questionName: "II Viertel V KLASS I VARIANT",
@@ -729,7 +729,9 @@ const initialState = {
             { answerText: "to’q bo’lmoq / сытый", isCorrect: false },
             { answerText: "och bo’lmoq / голоден", isCorrect: true },
             { answerText: "ichmoq / пить", isCorrect: false },
-            { answerText: "ayiqdek och qolmoq / голоден как медведь", isCorrect: false,
+            {
+              answerText: "ayiqdek och qolmoq / голоден как медведь",
+              isCorrect: false,
             },
           ],
         },
@@ -981,7 +983,8 @@ const initialState = {
           ],
         },
         {
-          questionText: "Überzetsen Sie. Bizning bog’ katta. / Наш сайт большой.",
+          questionText:
+            "Überzetsen Sie. Bizning bog’ katta. / Наш сад большой.",
           answerOptions: [
             { answerText: "Unser Garten ist klein.", isCorrect: false },
             { answerText: "Unser Garten ist klug.", isCorrect: false },
@@ -990,7 +993,7 @@ const initialState = {
           ],
         },
         {
-          questionText: "Bu Ra’no.U tirishqoq. / Это Раъно. Она усердно",
+          questionText: "Bu Ra’no.U tirishqoq. / Это Раъно. Она усердная",
           answerOptions: [
             { answerText: "Das ist Ra´no. Sie ist fleißig.", isCorrect: true },
             { answerText: "Das ist Ra´no.", isCorrect: false },
@@ -999,11 +1002,15 @@ const initialState = {
           ],
         },
         {
-          questionText: "Bizning maktab chiroyli va katta. / Наша школа красивая и большая.",
+          questionText:
+            "Bizning maktab chiroyli va katta. / Наша школа красивая и большая.",
           answerOptions: [
             { answerText: "Unsere Schule ist klein.", isCorrect: false },
             { answerText: "Unsere Schule ist groß.", isCorrect: false },
-            { answerText: "Unsere Schule ist schon und groß.", isCorrect: true },
+            {
+              answerText: "Unsere Schule ist schon und groß.",
+              isCorrect: true,
+            },
             { answerText: "Unsere Schule ist interessant.", isCorrect: false },
           ],
         },
@@ -1012,7 +1019,10 @@ const initialState = {
           answerOptions: [
             { answerText: "Meine Mutter ist Lehrenin.", isCorrect: false },
             { answerText: "Mein Vater ist Lehrer.", isCorrect: true },
-            { answerText: "Unsere Schule ist schon und groß.", isCorrect: false },
+            {
+              answerText: "Unsere Schule ist schon und groß.",
+              isCorrect: false,
+            },
             { answerText: "Unsere Schule ist interessant.", isCorrect: false },
           ],
         },
@@ -1332,13 +1342,16 @@ const initialState = {
       ],
     },
   ],
+  
+  
+  
 };
 
 export const germanReducer = (state = initialState, action) => {
   switch (action.type) {
     case "CHANGE_SELECTED_TEXT":
-      state.textA1.selectedText = action.textId
-      return state
+      state.textA1.selectedText = action.textId;
+      return state;
     default:
       return state;
   }

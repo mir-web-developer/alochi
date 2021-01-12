@@ -33,14 +33,48 @@ export const German = () => {
           <Grid item xs={12} sm={6} md={6}>
             <NavLink
               className="german__navLinkOfSection"
-              to="/german/germanTests"
+              to="/german/germanTests-5class"
             >
               <CardInClasses
-                sectionName={"Test"}
+                sectionName={"Test 5-class"}
                 sectionSubName={"Nemis tilidan testlar"}
                 sectionImg={test}
               />
             </NavLink>
+         {/* ///////////////////////////////////////////////// */}
+         <NavLink
+              className="german__navLinkOfSection"
+              to="/german/germanTests-6class"
+            >
+              <CardInClasses
+                sectionName={"Test 6-class"}
+                sectionSubName={"Nemis tilidan testlar"}
+                sectionImg={test}
+              />
+            </NavLink>
+            <NavLink
+              className="german__navLinkOfSection"
+              to="/german/germanTests-7class"
+            >
+              <CardInClasses
+                sectionName={"Test 7-class"}
+                sectionSubName={"Nemis tilidan testlar"}
+                sectionImg={test}
+              />
+            </NavLink>
+         
+            <NavLink
+              className="german__navLinkOfSection"
+              to="/german/germanTests-8class"
+            >
+              <CardInClasses
+                sectionName={"Test 8-class"}
+                sectionSubName={"Nemis tilidan testlar"}
+                sectionImg={test}
+              />
+            </NavLink>
+         
+         
             {/* //////////////////////////////////////// */}
             <NavLink className="german__navLinkOfSection" to="/german/briefA1">
               <CardInClasses

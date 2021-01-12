@@ -15,12 +15,15 @@ import { useDispatch } from "react-redux";
 import { logIn, logOut } from "./reducers/userReducer";
 import { RestClasses } from "./components/classes/RestClasses";
 import BriefA1 from "./components/German/BriefA1";
-import GermanTests from "./components/German/GermanTests";
+import GermanTests5class from "./components/German/GermanTests-5class";
 import Posts from "./components/posts/Posts";
 import Post from "./components/posts/Post";
 import AddPost from "./components/posts/AddPost";
 import GermanStunde from "./components/German/GermanStunde";
 import GermanTextA1 from "./components/German/GermanTextA1";
+import GermanTests6class from "./components/German/GermanTests-6class";
+import GermanTests7class from "./components/German/GermanTests-7class";
+import GermanTests8class from "./components/German/GermanTests-8class";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -59,7 +62,10 @@ export default function App() {
         <Route path="/addPost" component={() => <AddPost />} />
         {/* //////////////////// German Class ///////////////////////// */}
         <Route path="/german/briefA1" component={() => <BriefA1 />} />
-        <Route path="/german/germanTests" component={() => <GermanTests />} />
+        <Route path="/german/germanTests-5class" component={() => <GermanTests5class />} />
+        <Route path="/german/germanTests-6class" component={() => <GermanTests6class />} />
+        <Route path="/german/germanTests-7class" component={() => <GermanTests7class />} />
+        <Route path="/german/germanTests-8class" component={() => <GermanTests8class />} />
         <Route path="/german/stunde" component={() => <GermanStunde />} />
         <Route path="/german/textA1" component={() => <GermanTextA1 />} />
       </Switch>
