@@ -1,4 +1,4 @@
-import { Container, CssBaseline } from "@material-ui/core";
+import { Container, CssBaseline, Divider } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Footer } from "../common/Footer";
 import { MainAppBar } from "../common/MainAppBar";
@@ -12,8 +12,9 @@ import PostComments from "../posts/PostComments";
 import { db } from "../../firebase";
 import { useDispatch, useSelector } from "react-redux";
 import PostShowComments from "../posts/PostShowComments";
-import { changeSelectedText } from "../../reducers/germanReducer";
+import { changeSelectedText } from "../../reducers/germanTextA1Reducer";
 import GermanComments from "./GermanComments";
+import SentanceTable from "../common/SentanceTable";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     display: "flex",
     //   height: 224,
-    height: "100vh",
+    height: "100%",
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -72,14 +73,12 @@ function GermanTextA1() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
   const dispatch = useDispatch();
-  const selectedTextId = useSelector(
-    (state) => state.german.textA1.selectedText
-  );
-  const texts = useSelector((state) => state.german.textA1.texts);
+  const selectedTextId = useSelector((state) => state.germanTextA1Reducer.textA1.selectedText);
+  const texts = useSelector((state) => state.germanTextA1Reducer.textA1.texts);
 
   useEffect(() => {
     //@ts-ignore
@@ -131,7 +130,11 @@ function GermanTextA1() {
           {texts.map((text) => {
             return (
               <TabPanel value={value} index={text.textProp}>
-                {text.textTitle}
+                <Typography align="center"variant="h5">{text.textTitle}</Typography><br/>
+                <Typography variant="body1">{text.textContent} </Typography><br/>
+                <Divider />
+                <SentanceTable gaps={text.textA1Gaps} />
+                <br/>
                 <GermanComments postId={text.textId} />
                 {comments.map((comment) => {
                   return (

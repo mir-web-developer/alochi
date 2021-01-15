@@ -6,9 +6,10 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useSelector } from "react-redux";
-import { Container, CssBaseline } from "@material-ui/core";
+import { Container, CssBaseline, Divider } from "@material-ui/core";
 import { MainAppBar } from "../common/MainAppBar";
 import { Footer } from "../common/Footer";
+import SentanceTable from "../common/SentanceTable";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function GermanStunde() {
   const classes = useStyles();
-  const { stunde } = useSelector((state) => state.german);
-
+  const { stunde } = useSelector((state) => state.germanStundeReducer);
+ 
   return (
       <>
       <MainAppBar />
@@ -47,6 +48,8 @@ export default function GermanStunde() {
               {accordion.content}
             </Typography>
           </AccordionDetails>
+          <Divider />
+          <SentanceTable gaps={accordion.stundeGaps} />
         </Accordion>;
       })}
     </div>

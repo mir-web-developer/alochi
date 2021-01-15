@@ -257,10 +257,82 @@ const initialState = {
         {
           questionText: "Wie  übersetzt  man  auf  Usbekisch  das  Wort  “Eltern”",
           answerOptions: [
-            { answerText: "ota / ", isCorrect: true },
-            { answerText: "Nawai", isCorrect: false },
-            { answerText: "Buchora", isCorrect: false },
-            { answerText: "Samarkand", isCorrect: false },
+            { answerText: "ota - ona / родители", isCorrect: true },
+            { answerText: "aka-uka / Братья", isCorrect: false },
+            { answerText: "opa - singil / сёстры", isCorrect: false },
+            { answerText: "aka-uka opa-singil / братья и сёстры", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie  übersetzt  man  auf  Usbekisch oder auf Russisch  das  Wort  “Groβeltern”",
+          answerOptions: [
+            { answerText: "bobo-buvi / бабушка и дедушка", isCorrect: true },
+            { answerText: "Ota-ona / родители", isCorrect: false },
+            { answerText: "Opa-singil / сёстры", isCorrect: false },
+            { answerText: "aka-uka / Братья", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie  übersetzt  man  auf  Usbekisch oder auf Russisch  das  Wort  “Groβvater”",
+          answerOptions: [
+            { answerText: "bobo-buvi / бабушка и дедушка", isCorrect: false },
+            { answerText: "Ota / папа", isCorrect: true },
+            { answerText: "Opa-singil / сёстры", isCorrect: false },
+            { answerText: "aka-uka / Братья", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie übersetzt man auf Deutsche das Wort “buvi / бабушка”?",
+          answerOptions: [
+            { answerText: "die Großmutter", isCorrect: false },
+            { answerText: "der Großvater", isCorrect: true },
+            { answerText: "die Großeltern", isCorrect: false },
+            { answerText: "die Eltern", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie  übersetzt  man  auf  Deutsche  das  Wort  “amaki-tog`a / дядя”?",
+          answerOptions: [
+            { answerText: "die Tante", isCorrect: false },
+            { answerText: "der Onkel", isCorrect: true },
+            { answerText: "der Vater", isCorrect: false },
+            { answerText: "der Großeltern", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie  übersetzt  man  auf  Usbekisch oder auf Russisch  das  Wort  “Groβvater”",
+          answerOptions: [
+            { answerText: "Ona / мама", isCorrect: false },
+            { answerText: "Opa / сестра", isCorrect: false },
+            { answerText: "xola, amma / тётя", isCorrect: true },
+            { answerText: "buvi / бабушка", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie übersetzt man auf Deutsche “ona / мама”?",
+          answerOptions: [
+            { answerText: "der Opa", isCorrect: true },
+            { answerText: "die Oma", isCorrect: false },
+            { answerText: "die Mutter", isCorrect: false },
+            { answerText: "die Schwester", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Wie übersetzt man auf Usbekisch oder auf Russisch “Vater”?",
+          answerOptions: [
+            { answerText: "bobo / дедушка", isCorrect: true },
+            { answerText: "ota / папа", isCorrect: false },
+            { answerText: "ona / мама", isCorrect: false },
+            { answerText: "aka / брат", isCorrect: false },
+          ],
+        },
+        {
+          questionText: "Ergānzen Sie! Wir  Gratulieren ... zum   Navruzfest?",
+          answerOptions: [
+            { answerText: "Ihnen", isCorrect: true },
+            { answerText: "Sie", isCorrect: false },
+            { answerText: "euch", isCorrect: false },
+            { answerText: "Ihr", isCorrect: false },
           ],
         },
       ],

@@ -1,27 +1,7 @@
+
+
 const initialState = {
-  textA1: {
-    selectedText: "textA1_2",
-    texts: [
-      {
-        textId: "textA1_1",
-        textProp: 0,
-        textLabel: "1",
-        textTitle: "text one",
-      },
-      {
-        textId: "textA1_2",
-        textProp: 1,
-        textLabel: "2",
-        textTitle: "text two",
-      },
-      {
-        textId: "textA1_3",
-        textProp: 2,
-        textLabel: "3",
-        textTitle: "text three",
-      },
-    ],
-  },
+  
   briefA1: [
     {
       briefTitle: "Brief 1",
@@ -104,29 +84,8 @@ const initialState = {
       dbCollectionName: "briefA1-10",
     },
   ],
-  stunde: [
-    {
-      key: "1",
-      title: "Title 1",
-      content:
-        "Men biletni 3kun oldin sotib oldim. Men 12-aprelda uchmoqchiman.",
-    },
-    {
-      key: "2",
-      title: "Title 2",
-      content: "I am the content of the accordion",
-    },
-    {
-      key: "3",
-      title: "Title 3",
-      content: "I am the content of the accordion",
-    },
-    {
-      key: "4",
-      title: "Title 4",
-      content: "I am the content of the accordion",
-    },
-  ],
+  
+
   question5class: [
     {
       questionId: 0,
@@ -1342,21 +1301,12 @@ const initialState = {
       ],
     },
   ],
-  
-  
-  
 };
 
 export const germanReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "CHANGE_SELECTED_TEXT":
-      state.textA1.selectedText = action.textId;
-      return state;
+  switch(action.type){
     default:
       return state;
   }
 };
 
-export const changeSelectedText = (textId) => {
-  return { type: "CHANGE_SELECTED_TEXT", textId };
-};
