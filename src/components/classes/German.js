@@ -120,26 +120,33 @@ export const German = () => {
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={TextB2}
             />
+            
+            <NavLink className="german__navLinkOfSection" to="/german/wortschatzA1A2">
             <CardInClasses
               sectionName={"Wortschatz A1-A2"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={wortschatzA1_A2}
             />
+            </NavLink>
             <CardInClasses
               sectionName={"Wortschatz A2-B1"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={wortschatzA2_B1}
             />
+              <NavLink className="german__navLinkOfSection" to="/german/slides">
             <CardInClasses
               sectionName={"Slayd"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={slide}
             />
+            </NavLink>
+            <NavLink className="german__navLinkOfSection" to="/german/ferienjob">
             <CardInClasses
               sectionName={"Ferienjob"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={ferienjob}
             />
+            </NavLink>
             <CardInClasses
               sectionName={"Uber Stipendien"}
               sectionSubName={"Nemis tilidan testlar"}

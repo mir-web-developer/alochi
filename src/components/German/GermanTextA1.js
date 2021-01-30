@@ -64,6 +64,13 @@ const useStyles = makeStyles((theme) => ({
   tabPanel: {
     width: "85%",
   },
+  sentanceTable: {
+    width: "50%",
+    margin:"0 auto",
+    [theme.breakpoints.down('sm')]: {
+      width: "100%"
+    },
+  }
 }));
 
 function GermanTextA1() {
@@ -133,7 +140,9 @@ function GermanTextA1() {
                 <Typography align="center"variant="h5">{text.textTitle}</Typography><br/>
                 <Typography variant="body1">{text.textContent} </Typography><br/>
                 <Divider />
+                <div className={classes.sentanceTable}>
                 <SentanceTable gaps={text.textA1Gaps} />
+                </div>
                 <br/>
                 <GermanComments postId={text.textId} />
                 {comments.map((comment) => {

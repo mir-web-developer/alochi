@@ -24,6 +24,10 @@ import GermanTextA1 from "./components/German/GermanTextA1";
 import GermanTests6class from "./components/German/GermanTests-6class";
 import GermanTests7class from "./components/German/GermanTests-7class";
 import GermanTests8class from "./components/German/GermanTests-8class";
+import GermanWortschatzA1A2 from "./components/German/GermanWortschatzA1A2";
+import GermanSlides from "./components/German/GermanSlides";
+import GermanSlide from "./components/German/GermanSlide";
+import GermanFerienjob from "./components/German/GermanFerienjob";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -68,6 +72,10 @@ export default function App() {
         <Route path="/german/germanTests-8class" component={() => <GermanTests8class />} />
         <Route path="/german/stunde" component={() => <GermanStunde />} />
         <Route path="/german/textA1" component={() => <GermanTextA1 />} />
+        <Route path="/german/wortschatzA1A2" component={() => <GermanWortschatzA1A2 />} />
+        <Route path="/german/slides" component={() => <GermanSlides />} />
+        <Route path="/german/slide/:id" component={() => <GermanSlide />} />
+        <Route path="/german/ferienjob" component={() => <GermanFerienjob />} />
       </Switch>
 
       <ToastContainer position="bottom-center" />
