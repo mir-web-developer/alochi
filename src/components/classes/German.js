@@ -152,11 +152,13 @@ export const German = () => {
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={stipendien}
             />
+             <NavLink className="german__navLinkOfSection" to="/german/bucher">
             <CardInClasses
               sectionName={"Bucher"}
               sectionSubName={"Nemis tilidan testlar"}
               sectionImg={bucher}
             />
+            </NavLink>
           </Grid>
         </Grid>
       </Container>

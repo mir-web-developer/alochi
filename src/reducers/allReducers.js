@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import { germanBucher } from "./germanBucher";
+import { germanFerienjob } from "./germanFerienjob";
 import { germanReducer } from "./germanReducer";
 import { germanStundeReducer } from "./germanStundeReducer";
 import { germanTests6classReducer } from "./germanTests6classReducer";
@@ -19,6 +21,8 @@ export const allReducers = combineReducers({
   germanTests7class:germanTests7classReducer,
   germanTests8class:germanTests8classReducer,
   germanTextA1Reducer:germanTextA1Reducer,
-  germanStundeReducer:germanStundeReducer
+  germanStundeReducer:germanStundeReducer,
+  germanFerienjob:germanFerienjob,
+  germanBucher:germanBucher
 
 })

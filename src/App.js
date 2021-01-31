@@ -28,6 +28,7 @@ import GermanWortschatzA1A2 from "./components/German/GermanWortschatzA1A2";
 import GermanSlides from "./components/German/GermanSlides";
 import GermanSlide from "./components/German/GermanSlide";
 import GermanFerienjob from "./components/German/GermanFerienjob";
+import GermanBucher from "./components/German/GermanBucher";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -76,6 +77,7 @@ export default function App() {
         <Route path="/german/slides" component={() => <GermanSlides />} />
         <Route path="/german/slide/:id" component={() => <GermanSlide />} />
         <Route path="/german/ferienjob" component={() => <GermanFerienjob />} />
+        <Route path="/german/bucher" component={() => <GermanBucher />} />
       </Switch>
 
       <ToastContainer position="bottom-center" />
