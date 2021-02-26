@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
   },
+  mainText: {
+    fontFamily:"Andale Mono, monospace"
+  }
 }));
 
 export const HeroUnit = () => {
@@ -26,10 +29,11 @@ export const HeroUnit = () => {
             align="center"
             color="textPrimary"
             gutterBottom
+            className={classes.mainText}
           >
             {/* Album layout */}
-            Alochi
-          </Typography>
+            {/* Alochi */}
+            Отличник.ру       </Typography>
           <Typography
             variant="h5"
             align="center"
@@ -39,7 +43,9 @@ export const HeroUnit = () => {
             {/* Something short and leading about the collection below—its contents,
             the creator, etc. Make it short and sweet, but not too short so
             folks don&apos;t simply skip over it entirely. */}
-            Dasturchilar💻:Mirzokhid😎 / Mirjakhon⭐
+            {/* / Mirjakhon⭐ */}
+            Дистанционное обучение информатики и других предметов.<br/>
+            Разработчик💻: <b>Миржахон</b>
           </Typography>
           <div className={classes.heroButtons}>
             <Grid container spacing={2} justify="center">
@@ -47,14 +53,16 @@ export const HeroUnit = () => {
                 <NavLink className="home_appButton_signin" to="/posts">
                   
                   <Button variant="contained" color="primary">
-                    Posts
+                    {/* Posts */}
+                    Посты
                   </Button>
                 </NavLink>
               </Grid>
               <Grid item>
               <NavLink className="home_appButton_signin" to="/addPost">
                 <Button variant="outlined" color="primary">
-                  Add Post
+                  {/* Add Post */}
+                  Добавить пост
                 </Button>
                 </NavLink>
               </Grid>
